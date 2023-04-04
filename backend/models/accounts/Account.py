@@ -7,4 +7,18 @@ class AccountModel(BaseModel):
     acc_id: int
     first_name: str
     last_name: str
-    assigned_courses: List
+    course_id: int
+    role_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class AccountModelAdd(BaseModel):
+    first_name: str
+    last_name: str
+    course_id: int
+    role_id: int
+
+    class Config:
+        orm_mode = True
