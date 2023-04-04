@@ -1,5 +1,10 @@
-from backend.models.accounts.Account import AccountModel
+from .Account import AccountModel, AccountModelAdd
 
 
 class TeacherModel(AccountModel):
-    pass
+    ...
+
+
+class TeacherModelAdd(AccountModelAdd):
+    role_id = 1
+

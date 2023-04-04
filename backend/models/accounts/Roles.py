@@ -9,3 +9,4 @@ class RolesModel(BaseModel):
 
 
 class Roles(Enum):
+    pass
